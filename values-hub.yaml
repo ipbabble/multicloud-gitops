@@ -7,12 +7,17 @@ clusterGroup:
   - vault
   - golang-external-secrets
   - config-demo
-
+  
   subscriptions:
   - name: advanced-cluster-management
     namespace: open-cluster-management
     channel: release-2.4
     csv: advanced-cluster-management.v2.4.1
+
+  - name: rhacs-operator
+    namespace: rhacs-operators
+    channel: rhacs-3.68
+    csv: rhacs-operator.v3.68.1
 
   projects:
   - hub
@@ -29,6 +34,11 @@ clusterGroup:
       kind: ManagedClusterInfo
       jsonPointers:
         - /spec/loggingCA
+
+  - name: open-cluster-security
+    namespace: rhacs-operators
+    project: hub
+    path: common/acs
 
   - name: vault
     namespace: vault
