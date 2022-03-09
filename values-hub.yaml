@@ -14,7 +14,7 @@ clusterGroup:
     channel: release-2.4
     csv: advanced-cluster-management.v2.4.1
 
-  - name: rhacs-operator
+  - name: advanced-cluster-security
     namespace: rhacs-operator
     channel: rhacs-3.68
     csv: rhacs-operator.v3.68.1
@@ -35,7 +35,7 @@ clusterGroup:
       jsonPointers:
         - /spec/loggingCA
 
-  - name: open-cluster-security
+  - name: acs
     namespace: rhacs-operator
     project: hub
     path: common/acs
