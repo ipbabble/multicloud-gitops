@@ -14,7 +14,7 @@ clusterGroup:
     channel: release-2.4
     csv: advanced-cluster-management.v2.4.1
 
-  - name: rhacs-operator
+  - name: rhacs-operators
     namespace: rhacs-operators
     channel: rhacs-3.68
     csv: rhacs-operator.v3.68.1
