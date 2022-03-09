@@ -7,6 +7,7 @@ clusterGroup:
   - vault
   - golang-external-secrets
   - config-demo
+  - acs-stackrox
   
   subscriptions:
   - name: advanced-cluster-management
@@ -14,8 +15,8 @@ clusterGroup:
     channel: release-2.4
     csv: advanced-cluster-management.v2.4.1
 
-  - name: rhacs-operator
-    namespace: rhacs-operator
+  - name: rhacs-operator  #packageName
+    namespace: rhacs-operator # operator namespace
     channel: rhacs-3.68
     csv: rhacs-operator.v3.68.1
 
