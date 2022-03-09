@@ -4,7 +4,7 @@ metadata:
   namespace: rhacs-operator
   name: stackrox-secured-cluster-services
 spec:
-  clusterName: hub
+  clusterName: wh-acs-hub
   auditLogs:
     collection: Auto
   admissionControl:
