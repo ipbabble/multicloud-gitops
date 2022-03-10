@@ -9,6 +9,7 @@ clusterGroup:
   - config-demo
   - acs-stackrox
   - rhacs-operator
+  - policies
   
   subscriptions:  #name -> packageName
   - name: advanced-cluster-management
