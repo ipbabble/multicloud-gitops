@@ -2,14 +2,15 @@ clusterGroup:
   name: hub
   isHubCluster: true
 
-  namespaces:
+  namespaces:    
   - open-cluster-management
   - vault
   - golang-external-secrets
   - config-demo
   - acs-stackrox
+  - rhacs-operator
   
-  subscriptions:
+  subscriptions:  #name -> packageName
   - name: advanced-cluster-management
     namespace: open-cluster-management
     channel: release-2.4
@@ -20,14 +21,15 @@ clusterGroup:
     channel: rhacs-3.68
     csv: rhacs-operator.v3.68.1
 
-  projects:
+# add the top level 
+# OpenShiftGitOps
+  projects:   
   - hub
   - config-demo
   - golang-external-secrets
-  - rhacs-operator
 
-  applications:
-  - name: acm
+  applications:  
+  - name: acm   #aibitary
     namespace: open-cluster-management
     project: hub
     path: common/acm

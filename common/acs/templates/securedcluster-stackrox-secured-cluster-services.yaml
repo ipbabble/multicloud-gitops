@@ -1,7 +1,7 @@
 ﻿apiVersion: platform.stackrox.io/v1alpha1
 kind: SecuredCluster
 metadata:
-  namespace: acs-stackrox
+  namespace: rhacs-operator
   name: stackrox-secured-cluster-services
 spec:
   clusterName: wh-acs-hub
