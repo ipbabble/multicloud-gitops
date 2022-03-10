@@ -24,6 +24,7 @@ clusterGroup:
   - hub
   - config-demo
   - golang-external-secrets
+  - rhacs-operator
 
   applications:
   - name: acm
@@ -37,7 +38,7 @@ clusterGroup:
         - /spec/loggingCA
 
   - name: acs
-    namespace: openshift-operator
+    namespace: rhacs-operator
     project: hub
     path: common/acs
 
