@@ -37,7 +37,7 @@ clusterGroup:
         - /spec/loggingCA
 
   - name: acs
-    namespace: rhacs-operator
+    namespace: openshift-operator
     project: hub
     path: common/acs
 
