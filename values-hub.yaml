@@ -40,10 +40,15 @@ clusterGroup:
       jsonPointers:
         - /spec/loggingCA
 
-  - name: acs
+  - name: acs-central
     namespace: rhacs-operator
     project: hub
-    path: common/acs
+    path: common/acs/central
+
+  - name: acs-secured-cluster
+    namespace: rhacs-operator
+    project: hub
+    path: common/acs/securedcluster
 
   - name: vault
     namespace: vault

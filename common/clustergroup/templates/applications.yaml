@@ -41,6 +41,8 @@ spec:
           value: {{ $.Values.global.hubClusterDomain }}
         - name: global.localClusterDomain
           value: {{ coalesce $.Values.global.localClusterDomain $.Values.global.hubClusterDomain }}
+        - name: global.localClusterName
+          value: {{ coalesce $.Values.global.localClusterName $.Values.global.hubClusterName }}
         {{- range .overrides }}
         - name: {{ .name }}
           value: {{ .value | quote }}
