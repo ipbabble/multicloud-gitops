@@ -32,7 +32,7 @@ clusterGroup:
 
   - name: acs-secured-cluster
     namespace: rhacs-operator
-    project: hub
+    project: region
     path: common/acs/securedcluster
 
 #
