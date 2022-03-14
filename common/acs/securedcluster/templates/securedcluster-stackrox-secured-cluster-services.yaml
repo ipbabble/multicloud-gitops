@@ -5,9 +5,11 @@ metadata:
   name: stackrox-secured-cluster-services
 spec:
 # wh-central  # {{ .Values.global.clusterName }}  
+#  clusterName: |
+#    wh-central  # {{ .Values.global.clusterName }} OR  
+#    {{ fromSecret "open-cluster-management-agent" "hub-kubeconfig-secret" "cluster-name" | base64dec }}                            
   clusterName: |
-    {{ fromSecret "open-cluster-management-agent" "hub-kubeconfig-secret" "cluster-name" | base64dec }} 
-                                        
+    {{ .Values.clusterGroup.name }}                            
   auditLogs:
     collection: Auto
   admissionControl:
