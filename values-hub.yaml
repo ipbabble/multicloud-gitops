@@ -1,13 +1,14 @@
 clusterGroup:
   name: hub
   isHubCluster: true
+  # WH-TO-DO remove the following line once we figure out clusterName
+  clusterName: wh-central
 
   namespaces:    
   - open-cluster-management
   - vault
   - golang-external-secrets
   - config-demo
-  - acs-stackrox
   - rhacs-operator
   - policies
   

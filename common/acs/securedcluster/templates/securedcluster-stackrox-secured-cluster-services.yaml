@@ -9,7 +9,7 @@ spec:
 #    wh-central  # {{ .Values.global.clusterName }} OR  
 #    {{ fromSecret "open-cluster-management-agent" "hub-kubeconfig-secret" "cluster-name" | base64dec }}                            
   clusterName: |
-    {{ .Values.clusterGroup.name }}                            
+    {{ .Values.clusterGroup.clusterName }}                            
   auditLogs:
     collection: Auto
   admissionControl:
