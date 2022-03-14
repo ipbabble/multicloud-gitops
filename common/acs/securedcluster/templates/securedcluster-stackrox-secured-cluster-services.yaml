@@ -4,7 +4,10 @@ metadata:
   namespace: rhacs-operator
   name: stackrox-secured-cluster-services
 spec:
-  clusterName: wh-central  # {{ .Values.global.clusterName }}
+# wh-central  # {{ .Values.global.clusterName }}  
+  clusterName: |
+    {{ fromSecret "open-cluster-management-agent" "hub-kubeconfig-secret" "cluster-name" | base64dec }} 
+                                        
   auditLogs:
     collection: Auto
   admissionControl:
