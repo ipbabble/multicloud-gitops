@@ -49,7 +49,7 @@ clusterGroup:
   - name: acs-secured-cluster
     namespace: rhacs-operator
     project: hub
-    path: common/acs/securedcluster
+    path: common/acs/secured-cluster
 
   - name: vault
     namespace: vault

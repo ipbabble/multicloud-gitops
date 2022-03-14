@@ -35,7 +35,12 @@ clusterGroup:
   - name: acs-secured-cluster
     namespace: rhacs-operator
     project: region
-    path: common/acs/securedcluster
+    path: common/acs/secured-cluster
+
+  - name: acs-secured-cluster-policy
+    namespace: rhacs-operator
+    project: region
+    path: acs/region/acs-secured-cluster
 
 #
 #  To have apps in multiple flavors, use namespaces and use helm overrides as appropriate
