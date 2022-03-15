@@ -8,7 +8,7 @@ clusterGroup:
   name: region-one
   isHubCluster: false
   # WH-TO-DO remove the following line once we figure out clusterName
-  clusterName: wh-secured-2
+  clusterName: wh-secured
   
   namespaces:
     - multicloud-gitops-region-one
