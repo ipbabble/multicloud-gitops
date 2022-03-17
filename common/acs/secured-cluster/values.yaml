@@ -1,3 +1,1 @@
-spec:
-  centralEndpoint: central-rhacs-operator.apps.wh-central.blueprints.rhecoeng.com:443
-    advertised: sensor.stackrox:443
+# Unused  
