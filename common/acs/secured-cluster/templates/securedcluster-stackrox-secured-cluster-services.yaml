@@ -16,7 +16,7 @@ spec:
     listenOnCreates: true
     timeoutSeconds: 3
     listenOnEvents: true
-  centralEndpoint: central-rhacs-operator.apps.wh-central.blueprints.rhecoeng.com:443
+  centralEndpoint: central.wh-central.blueprints.rhecoeng.com:443
   perNode:
     collector:
       collection: KernelModule
