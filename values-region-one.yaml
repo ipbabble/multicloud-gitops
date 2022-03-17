@@ -7,7 +7,8 @@ global:
 clusterGroup:
   name: region-one
   isHubCluster: false
-  
+  clusterName: wh-secured
+
   namespaces:
     - config-demo
     - rhacs-operator
@@ -34,9 +35,3 @@ clusterGroup:
     project: region
     path: common/acs/secured-cluster
 
-# WH TO-DO remove
-# - name: acs-secured-cluster-policy
-#   namespace: rhacs-operator
-#   project: region
-#   path: charts/region/acs-secured-cluster
-#
