@@ -6,7 +6,7 @@ metadata:
   namespace: rhacs-operator
   name: stackrox-secured-cluster-services
 spec:
-  clusterName: {{ .Values.clusterGroup.clusterName }}                            
+  clusterName: {{ .Values.global.clusterName }}                            
   auditLogs:
     collection: Auto
   admissionControl:
@@ -16,7 +16,7 @@ spec:
     listenOnCreates: true
     timeoutSeconds: 3
     listenOnEvents: true
-  centralEndpoint: central.wh-central.blueprints.rhecoeng.com:443
+  centralEndpoint: central-rhacs-operator.apps.{{ .Values.global.localClusterDomain }}:443
   perNode:
     collector:
       collection: KernelModule
