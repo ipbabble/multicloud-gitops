@@ -3,7 +3,6 @@ kind: SecuredCluster
 metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "3"
-  namespace: rhacs-operator
   name: stackrox-secured-cluster-services
 spec:
   clusterName: {{ .Values.clusterGroup.clusterName }}                            
