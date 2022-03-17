@@ -16,7 +16,7 @@ spec:
     listenOnCreates: true
     timeoutSeconds: 3
     listenOnEvents: true
-  centralEndpoint: central-rhacs-operator.apps.{{ .Values.global.localClusterDomain }}:443
+  centralEndpoint: central-rhacs-operator.{{ .Values.global.localClusterDomain }}:443
   perNode:
     collector:
       collection: KernelModule
