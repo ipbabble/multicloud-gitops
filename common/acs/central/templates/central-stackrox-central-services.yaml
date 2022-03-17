@@ -7,7 +7,7 @@ spec:
   central:
     exposure:
       loadBalancer:
-        enabled: true
+        enabled: false
         port: 443
       nodePort:
         enabled: false
