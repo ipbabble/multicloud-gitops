@@ -1,7 +1,7 @@
 ﻿apiVersion: platform.stackrox.io/v1alpha1
 kind: Central
 metadata:
-  namespace: rhacs-operator
+  namespace: stackrox
   name: stackrox-central-services
 spec:
   central:

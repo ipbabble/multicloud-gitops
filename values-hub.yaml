@@ -9,7 +9,7 @@ clusterGroup:
   - vault
   - golang-external-secrets
   - config-demo
-  - rhacs-operator
+  - stackrox
   - policies
   
   subscriptions:  #name -> packageName
@@ -42,12 +42,12 @@ clusterGroup:
         - /spec/loggingCA
 
   - name: acs-central
-    namespace: rhacs-operator
+    namespace: stackrox
     project: hub
     path: common/acs/central
 
   - name: acs-secured-cluster
-    namespace: rhacs-operator
+    namespace: stackrox
     project: hub
     path: common/acs/secured-cluster
 

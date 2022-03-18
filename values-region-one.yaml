@@ -11,7 +11,7 @@ clusterGroup:
 
   namespaces:
     - config-demo
-    - rhacs-operator
+    - stackrox
     - policies
 
   subscriptions:
@@ -31,7 +31,7 @@ clusterGroup:
     path: charts/all/config-demo
 
   - name: acs-secured-cluster
-    namespace: rhacs-operator
+    namespace: stackrox
     project: region
     path: common/acs/secured-cluster
 
