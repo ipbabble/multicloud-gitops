@@ -4,6 +4,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "3"
   name: stackrox-secured-cluster-services
+  namespace: stackrox
 spec:
   clusterName: {{ .Values.clusterGroup.clusterName }}                            
   auditLogs:

@@ -11,6 +11,7 @@ clusterGroup:
 
   namespaces:
     - config-demo
+    - rhacs-operator
     - stackrox
     - policies
 

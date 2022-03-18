@@ -9,6 +9,7 @@ clusterGroup:
   - vault
   - golang-external-secrets
   - config-demo
+  - rhacs-operator
   - stackrox
   - policies
   
