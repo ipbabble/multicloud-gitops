@@ -16,7 +16,7 @@ spec:
     listenOnCreates: true
     timeoutSeconds: 3
     listenOnEvents: true
-  centralEndpoint: central-stackrox.{{ .Values.global.localClusterDomain }}:443
+  centralEndpoint: central-stackrox.{{ .Values.global.centralDomain }}:443
   perNode:
     collector:
       collection: KernelModule

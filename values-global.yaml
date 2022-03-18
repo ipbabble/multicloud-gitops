@@ -1,6 +1,8 @@
 ---
 global:
   pattern: multicloud-gitops
+  # TO-DO fix
+  centralDomain: wh-central.blueprints.rhecoeng.com
 
   options:
     useCSV: false
