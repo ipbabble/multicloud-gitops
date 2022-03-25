@@ -6,7 +6,9 @@ metadata:
   name: stackrox-secured-cluster-services
   namespace: stackrox
 spec:
-  clusterName: {{ .Value.clusterGroup.clusterName }}                            
+  clusterName: |
+    {{ fromSecret "open-cluster-management-agent" "hub-kubeconfig-secret" "cluster-name" | base64dec }}
+ # clusterName: {{ .Value.clusterGroup.clusterName }}                            
   auditLogs:
     collection: Auto
   admissionControl:
