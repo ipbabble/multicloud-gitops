@@ -6,7 +6,7 @@ metadata:
   name: stackrox-secured-cluster-services
   namespace: stackrox
 spec:
-  clusterName: {{ .Values.global.clusterName }}                            
+  clusterName: {{ .Value.clusterGroup.clusterName }}                            
   auditLogs:
     collection: Auto
   admissionControl:
