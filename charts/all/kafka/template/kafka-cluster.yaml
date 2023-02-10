@@ -26,6 +26,9 @@ spec:
        port: 9093
        tls: true
        type: route
+       configuration:
+         bootstrap:
+           host: bootstrap-factory-kafka-cluster.{{ .Values.global.localClusterDomain }}
    replicas: 3
    storage:
      type: ephemeral
