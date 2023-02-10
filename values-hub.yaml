@@ -8,6 +8,7 @@ clusterGroup:
     - golang-external-secrets
     - config-demo
     - hello-world
+    - lab-kafka
 
   subscriptions:
     acm:
@@ -16,10 +17,16 @@ clusterGroup:
       channel: release-2.6
       #csv: advanced-cluster-management.v2.6.1
 
+    amq-streams:
+      name: amq-streams
+      namespace: lab-cluster
+      channel: stable
+
+
   projects:
     - hub
     - config-demo
-    - hello-world
+    - hello-world  # use this for kafka
 
   applications:
     acm:
@@ -56,6 +63,13 @@ clusterGroup:
       namespace: hello-world
       project: hello-world
       path: charts/all/hello-world
+
+    kafka:
+      name: kafka
+      namespace: lab-kafka
+      project: hello-world
+      path: charts/all/kafka
+
 
   imperative:
     # NOTE: We *must* use lists and not hashes. As hashes lose ordering once parsed by helm
