@@ -19,7 +19,7 @@ clusterGroup:
 
     amq-streams:
       name: amq-streams
-      namespace: lab-cluster
+      namespace: lab-kafka
       channel: stable
 
 
