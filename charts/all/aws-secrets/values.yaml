@@ -4,3 +4,6 @@ cloud:
 secretStore:
   name: gitops-secrets
   kind: ClusterSecretStore
+
+configdemosecret:
+  key: config-demo
