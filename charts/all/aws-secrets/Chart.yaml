@@ -1,0 +1,7 @@
+apiVersion: v2
+description: A Helm chart to set up external secrets to use AWS Secrets Manager
+keywords:
+- pattern
+- secrets
+name: aws-secrets
+version: 0.0.1

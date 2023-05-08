@@ -1,0 +1,7 @@
+clusterGroup:
+  applications:
+    vault:
+      path: all/aws-secrets
+
+cloud:
+  region: us-west-1
