@@ -1,2 +1,6 @@
 cloud:
   region: us-east-1
+
+secretStore:
+  name: gitops-secrets
+  kind: SecretStore
