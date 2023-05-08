@@ -2,8 +2,6 @@ cloud:
   region: us-east-1
 
 secretStore:
-  name: gitops-secrets
+  name: vault-backend
   kind: ClusterSecretStore
 
-configdemosecret:
-  key: config-demo
