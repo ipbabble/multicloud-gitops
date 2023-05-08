@@ -3,4 +3,4 @@ cloud:
 
 secretStore:
   name: gitops-secrets
-  kind: SecretStore
+  kind: ClusterSecretStore
