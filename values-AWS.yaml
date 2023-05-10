@@ -5,3 +5,7 @@ clusterGroup:
 
 cloud:
   region: us-west-2
+
+secretStore:
+  name: aws-backend
+  kind: ClusterSecretStore
