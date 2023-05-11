@@ -2,6 +2,6 @@ cloud:
   region: us-east-1
 
 secretStore:
-  name: vault-backend
+  name: aws-backend
   kind: ClusterSecretStore
 
