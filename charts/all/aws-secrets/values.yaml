@@ -1,5 +1,5 @@
 # These are needed for the chart templating
-# (Currently) overriden in values-AWS.yaml
+# (Currently) overridden in values-AWS.yaml
 
 cloud:
   region: us-east-1

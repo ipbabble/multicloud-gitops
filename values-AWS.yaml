@@ -9,7 +9,7 @@ clusterGroup:
 cloud:
   region: us-west-2
 
-# You could chnage the name of the backend
+# You could change the name of the backend
 # You can change the ClusterSecretStore to SecretStore 
 secretStore:
   name: aws-backend
