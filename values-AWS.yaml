@@ -1,11 +1,16 @@
+# Redirect the path to the aws-secrets chart
+# i.e. we are reusing the vault GitOps application
 clusterGroup:
   applications:
     vault:
       path: charts/all/aws-secrets
 
+# You can specify which region
 cloud:
   region: us-west-2
 
+# You could chnage the name of the backend
+# You can change the ClusterSecretStore to SecretStore 
 secretStore:
   name: aws-backend
   kind: ClusterSecretStore
