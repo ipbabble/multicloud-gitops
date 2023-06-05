@@ -33,11 +33,17 @@ clusterGroup:
         jsonPointers:
           - /spec/loggingCA
 
-    vault:
-      name: vault
+#    vault:
+#      name: vault
+#      namespace: vault
+#      project: hub
+#      path: common/hashicorp-vault
+
+    vault-enterprise:
+      name: vault-enterprise
       namespace: vault
       project: hub
-      path: common/hashicorp-vault
+      path: charts/hub/vault-enterprise
 
     golang-external-secrets:
       name: golang-external-secrets
