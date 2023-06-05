@@ -1,6 +1,6 @@
 server:
   image:
-    repository: https://hub.docker.com/r/hashicorp/vault
+    repository: hashicorp/vault
     tag: 1.13.1-ent
   enterpriseLicense:
     secretName: vault-ent-license
