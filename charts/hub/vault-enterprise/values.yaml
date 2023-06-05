@@ -1,6 +1,4 @@
-server:
-  image:
-    repository: hashicorp/vault
-    tag: 1.13.1-ent
-  enterpriseLicense:
-    secretName: vault-ent-license
+vaultEnterprise:
+  repository: hashicorp/vault-enterprise
+  tag: 1.13.1-ent
+  secretName: vault-ent-license
