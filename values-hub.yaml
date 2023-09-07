@@ -8,6 +8,7 @@ clusterGroup:
     - golang-external-secrets
     - config-demo
     - hello-world
+    - policies
     - openshift-storage
 
   subscriptions:
