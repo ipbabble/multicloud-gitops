@@ -54,7 +54,7 @@ clusterGroup:
     storage:
       name: storage
       namespace: openshift-storage
-      project: opp
+      project: hub
       path: charts/hub/odf
 
     config-demo:
