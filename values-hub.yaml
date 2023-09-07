@@ -8,6 +8,7 @@ clusterGroup:
     - golang-external-secrets
     - config-demo
     - hello-world
+    - openshift-storage
 
   subscriptions:
     acm:
@@ -15,6 +16,11 @@ clusterGroup:
       namespace: open-cluster-management
       channel: release-2.8
       #csv: advanced-cluster-management.v2.6.1
+      
+    odf:
+      name: odf-operator
+      namespace: openshift-storage
+
 
   projects:
     - hub
@@ -44,6 +50,12 @@ clusterGroup:
       namespace: golang-external-secrets
       project: hub
       path: common/golang-external-secrets
+
+    storage:
+      name: storage
+      namespace: openshift-storage
+      project: opp
+      path: charts/hub/odf
 
     config-demo:
       name: config-demo
