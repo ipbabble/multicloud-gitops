@@ -1,0 +1,2 @@
+cloudProvider:
+  storageClass: ibmc-vpc-block-10iops-tier
